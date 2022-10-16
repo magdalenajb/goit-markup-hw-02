@@ -2,10 +2,11 @@ body{
     font-family: 'Roboto', sans-serif, 'Raleway', sans-serif;
     color:#212121;
 }
-:root {
---brandColor: #2196F3;
-}
 
+:root {
+    --brand-color:#2196F3;
+    --primary-color: #ffffff;
+}
 .headering{
     background-color: #ECECEC;
 }
@@ -17,7 +18,7 @@ body{
 font-family: 'Raleway', sans-serif;
 font-size: 26px ;
 font-weight: 700 ;
-color: #2196F3;
+color: var(--brand-color);
 line-height: 1.2;
 letter-spacing: 0.03em;
 text-align: left;
@@ -35,7 +36,7 @@ color:#000000;
 
 .studio-2{
 font-family: 'Raleway', sans-serif;
-color:#FFFFFF;
+color: var(--primary-color);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -53,12 +54,12 @@ font-size: 14px;
 line-height: 1.15;
 letter-spacing: 0.02em;
 text-decoration: none;
-
+color:#212121
 }
 
 .navigation:hover, .navigation:focus, 
 .kontakt:hover, .kontakt:focus{
-color:#2196F3;
+color: var(--brand-color);
 }
 
 .kontakt{
@@ -71,7 +72,7 @@ color: #757575;
 }
 
 .theme{
-background-color: #2F303A;;
+background-color: #2F303A;
 }
 
 .theme-1{
@@ -80,17 +81,17 @@ font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
-color:#FFFFFF;  
+color: var(--primary-color);  
 }
 
 .button-1{
-background-color:#2196F3 ;
+background-color: var(--brand-color);
 display: block;
 font-family: inherit;
 height: 50px;
 width: 200;
-border: 2px solid #2196F3;
-color:#FFFFFF;
+border: 2px solid var(--brand-color);
+color: var(--primary-color);
 text-align: center;
 border-radius: 4px;
 font-weight: 700;
@@ -146,13 +147,13 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 .city{
-color:#FFFFFF;
+color:var(--primary-color);
 }
 .city-1 {
 color:rgba(255, 255, 255, 0.6);
 }
 .city-1:hover, .city-1:focus{
-color:#2196F3; 
+color: var(--brand-color);
 }
 .different{
 text-decoration-line: underline;
@@ -178,7 +179,7 @@ font-family: inherit;
 height: 38px;
 width: 114;
 border: 1px solid #F5F4FA;
-color:#212121;
+font-family: inherit;
 text-align: center;
 border-radius: 4px;
 font-weight: 500;
@@ -189,6 +190,6 @@ cursor: pointer;
 }
 
 .button-2:hover, .button-2:focus{
-background-color: #2196F3;
-color:#ffffff;
+background-color: var(--brand-color);
+color:var(--primary-color);
 } 
